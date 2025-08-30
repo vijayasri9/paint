@@ -1,0 +1,160 @@
+<html>
+
+    <head>
+        <link rel="icon" href="paint.png">
+        <title>Color Spark</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>;
+    </head>
+
+    <body>
+
+        <header>
+            <h1>Color Spark🎨</h1>
+        </header>
+
+        <div id="container">
+
+           <div id="left" >
+
+            <div id="left-a">
+                <p>Font Colors</p>
+
+                <div id="font-color">
+
+                   <button style="background-color:rgb(255, 0, 0)" onclick="changeFontColor('rgb(255, 0, 0)')"></button>
+
+                   <button style="background-color:rgb(255, 221, 1)" onclick="changeFontColor('rgb(255, 221, 1)')" ></button>
+
+                   <button style="background-color:rgb(102, 255, 0)" onclick="changeFontColor('rgb(102, 255, 0)')"></button>
+
+                   <button style="background-color:rgb(0, 55, 255)" onclick="changeFontColor('rgb(0, 55, 255)')"></button>
+
+                   <button style="background-color:rgb(251, 64, 170)" onclick="changeFontColor('rgb(251, 64, 170)')"></button>
+
+                   <button style="background-color:rgb(81, 79, 81)" onclick="changeFontColor('rgb(81, 79, 81)')"></button>
+
+                   <button style="background-color:rgb(7, 3, 7)"  onclick="changeFontColor('rgb(7, 3, 7)')"></button>
+
+                   <button style="background-color:rgb(144, 0, 163)" onclick="changeFontColor('rgb(144, 0, 163)')"></button>
+
+                   <button style="background-color:rgb(255, 153, 0)" onclick="changeFontColor('rgb(255, 153, 0)')"></button>
+
+                   <input type="color" Oninput="changeFontColor(event.target.value)" style="width:28px;">
+
+
+                </div>
+            </div>
+
+            <div id="left-a">
+               <p>Background Colors</p>
+
+               <div id="background-color">
+
+                   <button style="background-color:rgb(255, 0, 0);" onclick="changeBgColor('rgb(255, 0, 0)')"></button>
+
+                   <button style="background-color:rgb(255, 221, 1);"  onclick="changeBgColor('rgb(255, 221, 1)')"></button>
+
+                   <button style="background-color:rgb(102, 255, 0);"  onclick="changeBgColor('rgb(102, 255, 0)')"></button>
+
+                   <button style="background-color:rgb(0, 55, 255);"  onclick="changeBgColor('rgb(0, 55, 255)')"></button>
+
+                   <button style="background-color:rgb(251, 64, 170);" onclick="changeBgColor('rgb(251, 64, 170)')"></button>
+
+                   <button style="background-color:rgb(81, 79, 81);"  onclick="changeBgColor('rgb(81, 79, 81)')"></button>
+
+                   <button style="background-color:rgb(0, 0, 0);"     onclick="changeBgColor('rgb(0,0,0)')"></button>
+
+                  <button style="background-color:rgb(144, 0, 163);"  onclick="changeBgColor('rgb(144, 0, 163)')"></button>
+
+                   <button style="background-color:rgb(255, 114, 39);" onclick="changeBgColor('rgb(255, 114, 39)')"></button>
+
+                  <input type="color" Oninput="changeBgColor(event.target.value)" style="width:28px;">
+
+               </div>
+            </div>
+
+            <div id="left-a">
+                 <p>Background Images</p>
+
+                 <div id="background-image" >
+
+                    <button style="background-image: url('bg1.png');"  width: 500px;
+                    height: 300px; onclick="changeBgImage('bg1.png')" ></button>
+
+                    <button style="background-image: url('bg2.png');"  width: 500px;
+                    height: 300px; onclick="changeBgImage('bg2.png')"></button>
+
+                    <button style="background-image: url('bg3.png');"
+                     width: 500px; height: 300px; onclick="changeBgImage('bg3.png')"></button>
+
+                    <button style="background-image: url('bg4.png');"
+                     width: 500px; height: 300px; onclick="changeBgImage('bg4.png')"></button>
+
+                    <button style="background-image: url('bg5.png');"  width: 500px;
+                    height: 300px; onclick="changeBgImage('bg5.png')"></button>
+
+                    <button style="background-image: url('bg6.png');"  width: 500px;
+                    height: 300px; onclick="changeBgImage('bg6.png')"></button>
+
+                    <button style="background-image: url('bg7.png');"
+                     width: 500px; height: 300px; onclick="changeBgImage('bg7.png')"></button>
+
+                    <button style="background-image: url('bg8.png');"  width: 500px;
+                    height: 300px; onclick="changeBgImage('bg8.png')"></button>
+
+                    <button style="background-image: url('bg9.png');"   width: 500px;
+                    height: 300px; onclick="changeBgImage('bg9.png')"></button>
+
+                    <button style="background-image: url('bg10.png');"  width: 500px;
+                    height: 300px; onclick="changeBgImage('bg10.png')"></button>
+
+                 </div>
+            </div>
+
+            <div id="left-a">
+                 <p>Font Styles</p>
+
+                 <div id="font-style">
+
+                    <h1 style="font-family:Georgia" onclick="changeFontFamily('Georgia')">A</h1>
+
+                    <h1 style="font-family:Lucida Handwriting" onclick="changeFontFamily('Lucida Handwriting')">A</h1>
+
+                    <h1 style="font-family:cursive" onclick="changeFontFamily('cursive')">A</h1>
+
+                    <h1 style="font-family:Monotype Corsiva" onclick="changeFontFamily('Monotype Corsiva')">A</h1>
+
+                    <h1 style="font-family:verdana" onclick="changeFontFamily('verdana')">A</h1>
+
+                 </div>
+
+            </div>
+            
+            
+           </div>
+
+            <div id="right">
+
+                <div id="right-a">
+                   <div id="text-editor">
+                      <h1 name="" id="text" contenteditable="true"> type your text here..</h1>
+                   </div>
+                </div>
+
+    
+                <div id="right-a">
+
+                    <button  id="download" onclick="downloadImage()" >Download</button>
+                    
+                </div>
+
+           </div>
+
+        </div>
+
+        <script src="script.js"></script>
+
+    </body>
+
+</html>
